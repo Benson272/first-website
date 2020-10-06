@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+              font-family: Arial;
+              font-size: 30px;
+              font-weight: 1000;
+              letter-spacing: 3px;
+              margin-top:100px;
+            }
+        </style>
+        <link type="text/css" rel="stylesheet" href="../Menu.css">
+  			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  			<script src="../Menu.js"></script>
+    </head>
+
+    <body id="body">
+        <section>
+            <p id="text">LEARN</p>
+            <button id="button">Start</button>
+        </section>
+    </body>
+
+    <script type="text/javascript">
+        window.addEventListener("load", main());
+
+        function main(){
+            const alphabet = "abcdefghijklmnopqrstuvwxyz";
+            const phrases = ["LEARN", "CREATE", "FAIL", "IMPROVE"];
+            var text = document.getElementById('text');
+            var wordChanges = 20;
+            var counter = 0;
+
+            document.getElementById("button").addEventListener("click",function(){
+                changeText(text);
+                setInterval(function(){changeText(text)}, 1500);
+            });
+
+            function changeText(element){
+
+            var word = element.innerHTML.trim();
+            var nextWord = phrases[(phrases.indexOf(word) + 1) % phrases.length];
+
+
+             var interval = setInterval(function dummyText(){
+                var newRandString = "";
+
+                //stops after changing a certain amount of times
+                if(counter >= wordChanges){
+                  clearInterval(interval);
+                  element.innerHTML = nextWord;
+                  counter = 0;
+                  return;
+                }
+
+                //ease into word appearing (letter by letter)
+                else if(counter > wordChanges - nextWord.length){
+                    var correctLetters = counter - (wordChanges - nextWord.length);
+                  //fills in the correct letters
+                    for(var k = 0; k < correctLetters; k++){
+                    newRandString += nextWord.charAt(k);
+                  }
+                  //fills in the random trailing letters
+                  for(var i = 0; i < nextWord.length - correctLetters; i++){
+                    newRandString += alphabet.charAt(Math.floor(Math.random() * 26));
+                  }
+                }
+
+                //gets a new random word
+                else{
+                  for(var i=0; i<word.length; i++){
+                    newRandString += alphabet.charAt(Math.floor(Math.random() * 26));
+                  }
+
+                }
+
+                newRandString = newRandString.toUpperCase();
+                element.innerHTML = newRandString;
+                counter++;
+             }, 40);
+            }
+        }
+    </script>
+
+</html>
