@@ -1,0 +1,25 @@
+body,button{
+    cursor:url(assets/cursor.png) 40 40,auto;
+    user-select: none;
+}
+#header h1{
+    text-align: center;
+}
+#canvas{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:-1;
+}
+#circle{
+    content:"";
+    width:90px;
+    height:90px;
+    border:5px solid rgba(255,255,255,0.4);
+    border-radius:100%;
+    background-color:rgba(255,0,0,0.4);
+    position:absolute;
+    top:150px;
+    left:0px;
+    z-index:10;
+}

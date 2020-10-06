@@ -1,0 +1,59 @@
+<!doctype html>
+	<html>
+		<head>"anything in here will become the title"</head>
+		<body>
+			<h1>"anything in here will be a heading to a paragraph"</h1>
+			<p>"anything in here will become a paragraph</p>
+			<p style="font-size:10px;font-family:Arial;color:red;background-color:brown;text-align:left"> </p>
+			<ol>
+				<li>"first item on the list"</li>
+				<li>"second item on the list"</li>
+			</ol>
+		</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+Terminology
+tags- things inside <>; tags almost always come in pairs (<html> and </html>)
+head- contains info about HTML file (title; title is what we see in the tab)
+body- contains content such as text, images, and links (content in body is what is visible on an actual page)
+<p>- are used to indicate paragraphs
+<h1>- is a heading tag; content in this tag will be the biggest; this can go all the way to <h6> (the higher the number the smaller the font size)
+hyperlink- link that is clicked to send user to a different page
+<a href="link"> "thing to click" </a>- This format is for adding a hyperlink
+<img src="link of picture" />- used to add picture to page (no closing tag)
+<ol>- used to create an ordered list
+	<li>-used to show list
+<ul>- used to make an unordered list (bullet points)
+<!--comment-->- used to make a comment in the code
+<strong>- bold a word
+<em>- italicize a word
+<table (border=1px)>- used to create an organized table
+	<tr>- used to specify rows
+	<td>- table data; what will be displayed (more td= more column)
+	<tbody>- same as body for html
+	<thead>- same as head for html
+<div>- lets you divide the page into portions
+<span>- lets you individually style single word
+psuedo-class selector- :hover , :first-child , :nth-child(2/3/4/...) , :visited
+
+To connect to a CSS file use <link>, <link> needs 3 attributes: A type = "text/css" A rel = "stylesheet" A href = name of CSS
+To create unique ids for div use <div id="name of id">; to change it in css use "*name of id"
+in CSS file selector:hover can change the appearance of the word when our mouse hovers over it
+display has 4 prop.: block (makes the element take up the full width of the page) 
+		     inline-block (makes the element a block, but other elements can sit next to it)
+		     inline (only takes up as much width as it needs to)
+		     none (makes the element and its content disappear)
+position- absolute
+	  fixed - it will always be on your screen
+          relative 
+
+

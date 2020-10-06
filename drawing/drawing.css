@@ -1,0 +1,39 @@
+#header h1{
+    text-align:center;
+    padding-top:20px;
+    font-size:48px;
+}
+.canvasContainer{
+    margin:auto;
+    width:800px;
+}
+.controller div, .controller p{
+    display:inline-block;
+    font-size:26px;
+}
+.controller div{
+   font-size:20px;
+    border-radius:15px;
+    border:2px solid #1B18D8;
+    background-color:#59A6EE;
+    font-family:Verdana;
+    padding:0px;
+    width:30px;
+    text-align:center;
+    margin:0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+.controller p, .controller h4{
+    margin:10px;
+}
+.controller{
+    float:left;
+    margin:20px;
+}

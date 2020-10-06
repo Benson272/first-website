@@ -1,0 +1,13 @@
+Javascript			Python
+
+else if				elif
+&&				and
+||				or
+var hello = "hello"		hello="hello"
+console.log()			print
+function hello(){}		def hello():
+if(1<2){execute code)		if 1<2: execute code
+//				#
+for(var i= 0;i<1;i++){code}	for i in "name of the lest": code
+particle.x			particle['x']
+===				==

@@ -1,0 +1,25 @@
+#activePointsBox{
+    background-color:transparent;
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0px;
+    left:0px;
+    text-align:center;
+}
+#title{
+    color:white;
+    font-size:40px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    margin:0px;
+    transform: translate(-50%, -50%);
+    font-weight:bold;
+}
+canvas{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
